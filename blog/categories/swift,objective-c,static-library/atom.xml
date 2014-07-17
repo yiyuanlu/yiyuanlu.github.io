@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Swift，objective-c，static Library | 小木之林]]></title>
-  <link href="http://www.yiyuan129.com/blog/categories/swift,objective-c,static-library/atom.xml" rel="self"/>
-  <link href="http://www.yiyuan129.com/"/>
-  <updated>2014-07-17T14:11:40+08:00</updated>
-  <id>http://www.yiyuan129.com/</id>
+  <link href="http://yiyuan129.com/blog/categories/swift,objective-c,static-library/atom.xml" rel="self"/>
+  <link href="http://yiyuan129.com/"/>
+  <updated>2014-07-17T14:27:48+08:00</updated>
+  <id>http://yiyuan129.com/</id>
   <author>
     <name><![CDATA[小木]]></name>
     <email><![CDATA[luyiyuan129@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[在Swift中调用Objective-C的静态库]]></title>
-    <link href="http://www.yiyuan129.com/blog/2014/07/16/using-objective-c-static-library-in-swift/"/>
+    <link href="http://yiyuan129.com/blog/2014/07/16/using-objective-c-static-library-in-swift/"/>
     <updated>2014-07-16T16:17:57+08:00</updated>
-    <id>http://www.yiyuan129.com/blog/2014/07/16/using-objective-c-static-library-in-swift</id>
+    <id>http://yiyuan129.com/blog/2014/07/16/using-objective-c-static-library-in-swift</id>
     <content type="html"><![CDATA[<p>在Swift中调用Objective-C的静态库和调用Objective-C的源码方法基本一致，大致分为两个步骤：</p>
 
 <h4>1.设定：<code>XXX-Bridging-Header.h</code></h4>
