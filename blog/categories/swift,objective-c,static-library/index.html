@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>小木之林</title>
+  <title>Category: Swift，objective-c，static Library - 小木之林</title>
   <meta name="author" content="小木">
 
   
-  <meta name="description" content="在Swift中调用Objective-C的静态库和调用Objective-C的源码方法基本一致，大致分为两个步骤： 1.设定：XXX-Bridging-Header.h 将静态库的头文件import进去，如图： 2.调用静态库中的方法 具体调用就不需要import Objective-C的头文件了 &hellip;">
+  <meta name="description" content="Category: swift，objective-c，static library">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yiyuanlu.github.io">
+  <link rel="canonical" href="http://yiyuanlu.github.io/blog/categories/swift,objective-c,static-library">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="小木之林" type="application/atom+xml">
@@ -75,94 +75,40 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article role="article">
   
-  
-  
-    <article>
-      
   <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/07/16/using-objective-c-static-library-in-swift/">在Swift中调用Objective-C的静态库</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-07-16T16:17:57+08:00" pubdate data-updated="true">Jul 16<sup>th</sup>, 2014</time>
-        
-           | <a href="/blog/2014/07/16/using-objective-c-static-library-in-swift/#disqus_thread"
-             data-disqus-identifier="http://yiyuanlu.github.io/blog/2014/07/16/using-objective-c-static-library-in-swift/">Comments</a>
-        
-      </p>
+    <h1 class="entry-title">Category: Swift，objective-c，static Library</h1>
     
   </header>
+  
+  <div id="blog-archives" class="category">
 
 
-  <div class="entry-content"><p>在Swift中调用Objective-C的静态库和调用Objective-C的源码方法基本一致，大致分为两个步骤：</p>
 
-<h4>1.设定：<code>XXX-Bridging-Header.h</code></h4>
+  
+  <h2>2014</h2>
 
-<p>将静态库的头文件<code>import</code>进去，如图：</p>
+<article>
+  
+<h1><a href="/blog/2014/07/16/using-objective-c-static-library-in-swift/">在Swift中调用Objective-C的静态库</a></h1>
+<time datetime="2014-07-16T16:17:57+08:00" pubdate><span class='month'>Jul</span> <span class='day'>16</span> <span class='year'>2014</span></time>
 
-<p><img class="center" src="/images/blogimage/20140716/1.png"></p>
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/swift,objective-c,static-library/'>swift，objective-c，static library</a></span>
+</footer>
 
-<h4>2.调用静态库中的方法</h4>
 
-<p>具体调用就不需要import Objective-C的头文件了(<code>XXX-Bridging-Header.h</code>中的import是全局的)，<strong><font color = "red">直接在Swift中使用Swift的语法调用Objective-C的静态库就可以了</font></strong>，如图：</p>
-
-<p><img class="center" src="/images/blogimage/20140716/2.png"></p>
-
-<h4>另：和直接调用Objective-C源码不一样的地方是：</h4>
-
-<h5>A.Objective-C的源码拖进XCode，XCode会自动产生一个Objective-C与Swift桥接的头文件<code>XXX-Bridging-Header.h</code>（一个工程一个，XXX便是你的工程名），如图：</h5>
-
-<p><img class="center" src="/images/blogimage/20140716/3.png"></p>
-
-<h5>B.而Objective-C的静态库需要你自己产生这个头文件，而且需要加到XCode的<code>Build Settings</code>中的<code>Objective-C Bridging Header</code>.如图:</h5>
-
-<p><img class="center" src="/images/blogimage/20140716/4.png"></p>
-
-<h4>坑：</h4>
-
-<p>1.目前遇到在静态库中使用<code>Notifycation Center</code>监听 <code>Active</code>和<code>Terminate</code>都未起作用</p>
-
-<h4>总结：</h4>
-
-<p>看了官方的文档，双方混合调用都很方便，但是实际使用中肯定存在诸如上述的<code>坑</code>，个人建议大家慢慢将项目整体迁移至Swift，直接抛弃7.0一下的系统就好.</p>
-
-<h4>参考：</h4>
-
-<p><a href="https://developer.apple.com/library/prerelease/ios/documentation/swift/conceptual/swift_programming_language/index.html">Swift Programming Language</a><br/>
-<a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216">Using Swift with Cocoa and Objective-C</a></p>
+</article>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/07/16/using-objective-c-static-library-in-swift/">Read on &rarr;</a>
-    </footer>
-  
 
-
-    </article>
   
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+</article>
+
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -179,7 +125,7 @@
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/yiyuanlu">@yiyuanlu</a> on GitHub
@@ -211,6 +157,7 @@
 
   
 </aside>
+
 
     </div>
   </div>
