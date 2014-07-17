@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://yiyuanlu.github.io/sitemap.xml 
+Sitemap: http://www.yiyuan129.com/sitemap.xml 

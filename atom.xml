@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[小木之林]]></title>
-  <link href="http://yiyuanlu.github.io/atom.xml" rel="self"/>
-  <link href="http://yiyuanlu.github.io/"/>
-  <updated>2014-07-17T12:23:33+08:00</updated>
-  <id>http://yiyuanlu.github.io/</id>
+  <link href="http://www.yiyuan129.com/atom.xml" rel="self"/>
+  <link href="http://www.yiyuan129.com/"/>
+  <updated>2014-07-17T14:11:40+08:00</updated>
+  <id>http://www.yiyuan129.com/</id>
   <author>
     <name><![CDATA[小木]]></name>
     <email><![CDATA[luyiyuan129@gmail.com]]></email>
@@ -15,32 +15,32 @@
   
   <entry>
     <title type="html"><![CDATA[在Swift中调用Objective-C的静态库]]></title>
-    <link href="http://yiyuanlu.github.io/blog/2014/07/16/using-objective-c-static-library-in-swift/"/>
+    <link href="http://www.yiyuan129.com/blog/2014/07/16/using-objective-c-static-library-in-swift/"/>
     <updated>2014-07-16T16:17:57+08:00</updated>
-    <id>http://yiyuanlu.github.io/blog/2014/07/16/using-objective-c-static-library-in-swift</id>
+    <id>http://www.yiyuan129.com/blog/2014/07/16/using-objective-c-static-library-in-swift</id>
     <content type="html"><![CDATA[<p>在Swift中调用Objective-C的静态库和调用Objective-C的源码方法基本一致，大致分为两个步骤：</p>
 
 <h4>1.设定：<code>XXX-Bridging-Header.h</code></h4>
 
 <p>将静态库的头文件<code>import</code>进去，如图：</p>
 
-<p><img class="center" src="http://yiyuanlu.github.io/images/blogimage/20140716/1.png"></p>
+<p><img class="center" src="http://www.yiyuan129.com/images/blogimage/20140716/1.png"></p>
 
 <h4>2.调用静态库中的方法</h4>
 
 <p>具体调用就不需要import Objective-C的头文件了(<code>XXX-Bridging-Header.h</code>中的import是全局的)，<strong><font color = "red">直接在Swift中使用Swift的语法调用Objective-C的静态库就可以了</font></strong>，如图：</p>
 
-<p><img class="center" src="http://yiyuanlu.github.io/images/blogimage/20140716/2.png"></p>
+<p><img class="center" src="http://www.yiyuan129.com/images/blogimage/20140716/2.png"></p>
 
 <h4>另：和直接调用Objective-C源码不一样的地方是：</h4>
 
 <h5>A.Objective-C的源码拖进XCode，XCode会自动产生一个Objective-C与Swift桥接的头文件<code>XXX-Bridging-Header.h</code>（一个工程一个，XXX便是你的工程名），如图：</h5>
 
-<p><img class="center" src="http://yiyuanlu.github.io/images/blogimage/20140716/3.png"></p>
+<p><img class="center" src="http://www.yiyuan129.com/images/blogimage/20140716/3.png"></p>
 
 <h5>B.而Objective-C的静态库需要你自己产生这个头文件，而且需要加到XCode的<code>Build Settings</code>中的<code>Objective-C Bridging Header</code>.如图:</h5>
 
-<p><img class="center" src="http://yiyuanlu.github.io/images/blogimage/20140716/4.png"></p>
+<p><img class="center" src="http://www.yiyuan129.com/images/blogimage/20140716/4.png"></p>
 
 <h4>坑：</h4>
 
