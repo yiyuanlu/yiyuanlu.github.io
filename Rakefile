@@ -95,15 +95,22 @@ end
 
 # usage rake new_post[my-new-post] or rake new_post['my new post'] or rake new_post (defaults to "new-post")
 desc "Begin a new post in #{source_dir}/#{posts_dir}"
-task :new_post, :title do |t, args|
+task :new_post, :title, :talias do |t, args|
   if args.title
     title = args.title
   else
     title = get_stdin("Enter a title for your post: ")
   end
+
+  if args.talias
+    talias = args.talias
+  else
+    talias = get_stdin("Enter a tile alias for your post: ")
+  end
+
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   mkdir_p "#{source_dir}/#{posts_dir}"
-  filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
+  filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{talias.to_url}.#{new_post_ext}"
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
